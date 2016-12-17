@@ -1,0 +1,9 @@
+beer emoji:
+eomjione /!\ to credit
+
+convert svg to android:
+https://inloop.github.io/svg2android/
+
+barocode:
+https://openclipart.org/detail/38797/netalloy-barcode
+https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_add_black_24px.svg

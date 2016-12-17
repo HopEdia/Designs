@@ -1,0 +1,66 @@
+index: https://docs.mongodb.org/manual/core/index-compound/#index-type-compound
+	index for [name]
+
+unique index: https://docs.mongodb.org/manual/tutorial/create-a-unique-index/
+	unique for [name]
+
+db.users.createIndex( { "email": 1 }, { unique: true } )
+db.users.createIndex( { "username": 1 }, { unique: true } )
+
+//search, if reviews exist modify
+db.users.createIndex( { "reviews.user": 1 } )
+
+db.beer.createIndex({"name._value": "text"})
+//for regex use
+db.beer.createIndex({"name._value": 1}, { unique: true })
+
+db.beer.createIndex({"brewery_id._value": 1})
+db.beer.createIndex({"abv._value": 1})
+db.beer.createIndex({"cat_id._value": 1})
+
+use index intercetitoion
+{
+	"createdCollectionAutomatically" : false,
+	"numIndexesBefore" : 1,
+	"numIndexesAfter" : 2,
+	"ok" : 1
+}
+db.beer.find({$text : {$search : "kwak"}} )
+
+db.beer.find({$text : {$search : "kwak"}}, {"reviews": {$slice: 1}} )
+db.beer.find({"_id": ObjectId("56eec3ee0c101141519ca917")}, {"reviews": {$slice: 1}} )
+
+db.beer.update(
+{"_id": ObjectId("56eec3ee0c101141519ca917")},
+{$push: {
+	"reviews": {
+		$each: [
+			{
+			"date": "2016-03-20T15:45:07.837Z",
+			"shop": null,
+			"ebc": null,
+			"taste": {
+				"sweet": null,
+				"bitter": null,
+				"acid": null,
+				"alcochol": null,
+				"fruit": null,
+				"other": null
+			},
+			"scent": {
+				"sweet": null,
+				"bitter": null,
+				"acid": null,
+				"alcochol": null,
+				"fruit": null,
+				"other": null
+			},
+			"remark": ["la", "expedita omnis sed facilis ab impedit quae rerum earum assumenda ut necessitatibus fuga autem ullam cum est voluptatem in et "],
+			"rate": 6
+			}
+		],
+		$position: 0
+	}
+}})
+
+

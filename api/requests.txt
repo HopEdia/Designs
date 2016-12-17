@@ -1,0 +1,13 @@
+POST /review:
+{
+	"beerId": "56fad75f58e82872d1ab716d",
+	"review" :{
+		"remark": {
+			"lang": "fr",
+			"_value": "A un bon goût qui lui est propre"
+		},
+		"rate": 9,
+		"scent": null,
+		"taste": null
+	}
+}

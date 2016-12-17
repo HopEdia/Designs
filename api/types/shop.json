@@ -1,0 +1,34 @@
+{
+	"id": "id mongodb",
+	"type": "shop",
+	"name": [
+		{
+			"_value" : "the name of the shop (last one), check diff server side",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "the name of the shop (keep two weeks of change) and an archive ?, users notify the server ;)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"loc": [
+		{
+			"_value" : "coordinates": [125.6, 10.1],
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "coordinates": [125.6, 10.1],
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"reviews": [
+		{
+			"remark": ["en", "600 octet"],
+			"rate": "[1;5]"
+		}
+	]
+}

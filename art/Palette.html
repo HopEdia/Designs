@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Palette.html</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+div#colors div{float: left; width: 64px; height: 64px; margin: 2px; text-align: center; font-size: 12px; font-family: Arial, Helvetica, sans-serif}
+div#colors div span{font-weight: bold; cursor: pointer}
+div#colors div span:hover{text-decoration: underline}
+html{}
+input{margin-left: 1em;}
+</style></head>
+<body>
+<form>
+<div>Background color:<input type="color" id="background" oninput="document.body.style.backgroundColor = this.value;" /></div>
+</form>
+<div id="colors">
+<div style="background-color:rgb(248, 250, 229); color:rgb(0, 0, 0)">main-1:<br/><span>#F8FAE5</span></div><div style="background-color:rgb(239, 244, 193); color:rgb(0, 0, 0)">main-2:<br/><span>#EFF4C1</span></div><div style="background-color:rgb(230, 237, 155); color:rgb(0, 0, 0)">main-3:<br/><span>#E6ED9B</span></div><div style="background-color:rgb(220, 231, 116); color:rgb(0, 0, 0)">main-4:<br/><span>#DCE774</span></div><div style="background-color:rgb(213, 225, 86); color:rgb(0, 0, 0)">main-5:<br/><span>#D5E156</span></div><div style="background-color:rgb(205, 220, 57); color:rgb(0, 0, 0)">main-6 - Primary:<br/><span>#CDDC39</span></div><div style="background-color:rgb(187, 200, 52); color:rgb(0, 0, 0)">main-7:<br/><span>#BBC834</span></div><div style="background-color:rgb(167, 179, 46); color:rgb(0, 0, 0)">main-8:<br/><span>#A7B32E</span></div><div style="background-color:rgb(146, 156, 40); color:rgb(0, 0, 0)">main-9:<br/><span>#929C28</span></div><div style="background-color:rgb(107, 115, 29); color:rgb(255, 255, 255)">main-10:<br/><span>#6B731D</span></div></div>
+<script>
+function selectText(element){ if (document.selection){ var range = document.body.createTextRange(); range.moveToElementText(element); range.select(); }else if (window.getSelection){ var range = document.createRange(); range.selectNode(element); window.getSelection().addRange(range); } }
+document.getElementById('colors').addEventListener('click', function(event){ if (event.target.tagName.toLowerCase() == 'span'){ event.preventDefault(); selectText(event.target); document.execCommand('copy'); }});
+</script></body></html>

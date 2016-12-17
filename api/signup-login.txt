@@ -1,0 +1,32 @@
+POST: http://localhost:8081/signup
+	application/json
+	{"username": "USERNAME",
+	"password": "PASS",
+	"email": "EMAIL"}
+
+(
+POST: http://localhost:8081/resendMailToken
+	application/json
+	{"username":"USERNAME"}
+)
+
+POST: http://localhost:8081/getToken
+	application/json
+	{"username": "USERNAME",
+	"password": "PASS",
+	"validationToken": "TOKEN SENT BY EMAIL"}
+
+POST: http://localhost:8081/login
+	application/json
+	{"token": "TOKEN SENT BY getToken"}
+
+CHANGE PASSWORD:
+POST: http://localhost:8081/changePassword
+	application/json
+	{"email": "EMAIL"}
+
+POST: http://localhost:8081/getToken
+	application/json
+	{"email": "EMAIL",
+	"validationToken": "TOKEN SENT BY EMAIL",
+	"newPassword": "NEW PASSWORD"}

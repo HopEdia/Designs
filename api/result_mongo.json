@@ -1,0 +1,20 @@
+{
+  "result": {
+    "ok": 1,
+    "n": 1
+  },
+  "ops": [
+    {
+      "username": "****",
+      "password": false,
+      "salt": "<Buffer dc 44  ... >",
+      "email": "*******@*****.***",
+      "_id": "571b8fa584eaad1471e32ba5"
+    }
+  ],
+  "insertedCount": 1,
+  "insertedIds": [
+    "571b8fa584eaad1471e32ba5"
+  ]
+}
+

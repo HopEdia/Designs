@@ -1,0 +1,143 @@
+{
+	"_id": "id by mongodb",
+	"type": "beer",
+	"name": [
+		{
+			"_value" : "the name of the beer (last one), check diff server side",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "mandatory, the name of the beer (keep two weeks of change) and an archive ?, users notify the server ;)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"brewery_id": [
+		{
+			"_value" : "id of brewery (last one)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "id of brewery - see name",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"abv": [
+		{
+			"_value" : "alcochol by volume, between [0;100] (average)",
+			"number": "number values"
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "alcochol by volume, between [0;100] (last one)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "alcochol by volume, between [0;100] - see name",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"ibu": [
+		{
+			"_value" : "International Brewing Unit (last one)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "- see name",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"wikidata_id": [
+		{
+			"_value" : "id of the object on wikidata Qxxxx (last one)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "id of the object on wikidata Qxxxx - see name",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"categories": [
+		{
+			"_value" : "id of the categorie 2¹⁶ (last one)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "id of the categorie 2¹⁶ - see name",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"barcode": [
+		{
+			"_value" : "content of the barcode",
+			"format" : "format of the barcode",
+			"type": "type of drink's packaging (bottle, can, draft)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "content of the barcode - see name",
+			"format" : "format of the barcode",
+			"type": "type of drink's packaging (bottle, can, draft)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"images": [
+		{
+			"_value" : "image url",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "see name",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	]
+	TODO
+	"ingredients, in decreasing order": [
+		{"name of the ingredients": "percentage, between [0;100]"},
+		{"name of the ingredients": null}
+		],
+	"reviews": [
+		{
+			"date": "new Date().toJSON (recent first)",
+			"user": "user_id",
+			"shop": "shop_id",
+			"ebc": "[0;100]",
+			"packaging": "type of drink's packaging (bottle, can, draft)",
+			"taste": {
+				"sweet": "[0;100]",
+				"bitter": "[0;100]",
+				"acid": "[0;100]",
+				"alcochol": "[0;100]",
+				"fruit": "[0;100]",
+				"other": "[0;100]"
+				},
+			"scent": {
+				"sweet": "[0;100]",
+				"bitter": "[0;100]",
+				"acid": "[0;100]",
+				"alcochol": "[0;100]",
+				"fruit": "[0;100]",
+				"other": "[0;100]"
+				},
+			"remark": {"lang": "en", "_value" "600 octet"},
+			"rate": "[1;10]"
+		}
+	]
+}
+

@@ -1,0 +1,68 @@
+{
+	"_id": "id added by mongodb",
+	"type": "brewery",
+	"name": [
+		{
+			"_value" : "the name of the brewery (last one), check diff server side",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "the name of the brewery (keep two weeks of change) and an archive ?, users notify the server ;)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"loc": [
+		{
+			"coordinates" : "coordinates": [125.6, 10.1],
+			"address": "address",
+			"city": "city",
+			"state": "state",
+			"country": "country, ISO 3166-1 alpha-2",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"coordinates" : "coordinates": [125.6, 10.1],
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"parent_company": [
+		{
+			"_value" : "the name of the parent_company (last one), check diff server side",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "the name of the parent_company (keep two weeks of change) and an archive ?, users notify the server ;)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"website" : [
+		{
+			"_value" : "the url of the website (last one), check diff server side",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "the url of the website (keep two weeks of change) and an archive ?, users notify the server ;)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+	"phone" : [
+		{
+			"_value" : "the phone number (last one), check diff server side",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		},
+		{
+			"_value" : "the phone number (keep two weeks of change) and an archive ?, users notify the server ;)",
+			"user": "user_id",
+			"date": "new Date().toJSON"
+		}
+	],
+}

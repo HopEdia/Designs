@@ -1,0 +1,15 @@
+{
+	"_id": "user id",
+	"username": "username",
+	"password": "pass, hashed and salted",
+	"email": "email address"
+}
+
+
+{
+	"_comment": "do not include in the db -> less size & db trafic",
+	"tokens": [
+		"list of tokens, pull, delete and generate new one, ttl one month, MUST be hashed in the db, Key 512bits, without hash, it is ~random -> no rainbow table",
+		"SHA-256( base64( username || 0x00 || date --utc +%s || HMAC_Key( username || 0x00 || date --utc +%s ) ) ) "
+	]
+}
