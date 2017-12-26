@@ -1,13 +1,13 @@
-##Hop'Edia Design repo
+## Hop'Edia Design repo
 
 Everything in this repo is only how the project in supposed to be in its final form, it's not yet the case!
 
-###Art Folder
+### Art Folder
 - Icons
 - Palettes used in the design
 - Everything else releated to the graphic part
 
-###Api Folder
+### Api Folder
 - Everything about the api, keep in mind that not everything is yet implemented
 
 
